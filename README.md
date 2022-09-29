@@ -4,6 +4,7 @@
 
 ### Setup do ambiente
 - [Node LTS](https://nodejs.org/en/)
+- Android Studio
 
 ### Utilizei:
 - Expo para criar o projeto  [Expo ](https://docs.expo.dev/)
@@ -21,7 +22,8 @@
 
 ### Como rodar na minha máquina?
 - Clone o projeto
-- Rode o projeto `expo start`
+- Rode o projeto digitando `expo start` no terminal
+- Se tiver o android Studio instalado, digite `a` no terminal. Caso não tenha o Android Studio instalado voce pode rodar no Browser digitando `w`. Ao abrir no browser tecle F12 para e clique na opçao de ferramentas para visualizar como dispositivo móvel.
 - Pronto 🎉
 
 ### Estrutura do projeto
@@ -37,4 +39,4 @@
     - `createPost`: com finalidade de criar um novo post. obs: Nesse reducer encontrei certa dificuldade de alinhar com a chamada http e nao consegui realizar esta action a tempo.
 `.src/services` `PostService` arquivo que possui as chamadas http para API - organizados com as seguintes nomeclaturas: `getAllPosts`  `createPost`  `searchPost` `deletePost` 
     Algumas chamadas não estão sendo realizadas.
-`.src/theme`: Pasta com themes um component que fica sendo visualizado globalmente para utilizar de forma padrão: cores, fontes e tamanhos de fontes   
+`.src/theme`: Pasta com themes um component que fica sendo visualizado globalmente com o `ThemeProvider` do react native para utilizar de forma padrão: cores, fontes e tamanhos de fontes   
